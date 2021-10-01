@@ -1,0 +1,62 @@
+<html>
+<head>
+	<title>Chocolate Heaven</title>
+	<link rel="stylesheet" href="Style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com"> 
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+	<script>
+		function change_text(){
+		if (document.getElementById("demo").innerHTML == "Wispa"){
+			document.getElementById("demo").innerHTML = "Kit-Kat";}
+		else{
+			document.getElementById("demo").innerHTML = "Wispa";}
+		}
+
+		function joke(){ 
+			switch(Math.floor(Math.random() * 3)){
+				case 0:
+					if (confirm("What do you call a lamb covered in chocolate?") == true){
+						alert("A chocolate baaa.");}
+					break;
+				case 2:
+					if (confirm("What is a monkey’s favorite cookie?") == true){
+						alert("A Mars bar.");}
+					break;
+				case 1:
+					if (confirm("Why did the donut visit the dentist?") == true){
+						alert("He needed a chocolate filling.");}
+					break;
+			}
+		}
+	</script>
+</head>
+<body>
+	<h1>Chocolate Heaven</h1>
+	<p class="intro">Chocolate is a food product made from roasted and ground cacao pods, that is available as a liquid, solid or paste, on its own or as a flavoring agent in other foods. Cacao has been consumed in some
+	form since at least the Olmec civilization (19th-11th century BCE), and the majority of Mesoamerican people - including the Maya and Aztecs - made chocolate beverages.</p>
+	<p class="intro">Chocolate is one of the most popular food types and flavors in the world, and many foodstuffs involving chocolate exist, particularly desserts, including cakes, pudding, mousse, chocolate brownies,
+	and chocolate chip cookies. Many candies are filled with or coated with sweetened chocolate. Chocolate bars, either made of solid chocolate or other ingredients coated in chocolate, are eaten as snacks. Gifts of 
+	chocolate molded into different shapes (such as eggs, hearts, coins) are traditional on certain Western holidays, including Christmas, Easter, Valentine's Day, and Hanukkah. Chocolate is also used in cold and hot beverages,
+	such as chocolate milk and hot chocolate, and in some alcoholic drinks, such as creme de cacao.</p>
+	<img alt="Image of the cross section of a Crunchie" src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Crunchie_bar.jpg" width="580" height="340">
+	<ol id="list">
+		<li>Crunchie</li>
+		<li id = "demo">Kit-Kat</li>
+		<li>Mars</li>
+		<li>Twirl</li>
+		<li>Milky Way</li>
+	</ol>
+	<form action="/process.php">
+		<input type="text" id="input1" name="input1"><br><br>
+		<input type="text" id="input2" name="input2"><br><br>
+		<input type="submit" value="Submit">
+	</form>
+	<div>
+	<button type="button" onclick="change_text()">Replace</button>
+	<button type="button" onclick="joke()">Joke</button>
+	</div>
+	<a href="https://www.chocolate.co.uk/">Visit this chocolate related website</a>
+	
+</body>
+</html>
