@@ -1,0 +1,14 @@
+h1{
+	font-family: 'Merriweather', serif;
+	font-weight: bold;
+}
+.intro {
+  color: brown;
+  text-align: center;
+}
+#list {
+	color: purple;
+}
+body{
+	background: PapayaWhip;
+}
